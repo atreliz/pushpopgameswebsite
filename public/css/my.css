@@ -1,0 +1,758 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(myfonts/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(myfonts/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(myfonts/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(myfonts/toadOcfmlt9b38dHJxOBGC7eGk4PJkA83J1AXCmgUfc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(myfonts/fpTVHK8qsXbIeTHTrnQH6H7XMO6S-yJpg1torQFmnv33rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+
+/*
+body{
+	margin: auto;
+	width:1377px;
+	height: 5161px;
+}*/
+.custom-error-message{color:red;text-align: center;}
+
+body{background: black;font-family: 'Source Sans Pro' !important;}
+*{font-family: 'Source Sans Pro' !important;}
+a{    text-decoration: none!important;}
+#main-wrapper {
+	position: relative;
+	/*background: rgb(247, 247, 247) !important;*/
+}
+#main-wrapper .major h2 {
+	background: rgb(247, 247, 247) !important;
+}
+
+#header-wrapper{ 
+	background: url(../images/sky.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 3em 0 6em 0;
+
+	margin-bottom: -12px;
+padding-bottom: 0px;
+}
+
+#header-wrapper:before {display:none;}
+
+.mainlogo{width: 20%;}
+
+#header h1 {margin: 0 0 0 0; height: 178px;}
+
+#header h2{
+	font-size: 2.5em; line-height: 1.5em; 
+	color: rgb(33, 116, 240);
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+#header h2.txtleft{margin-left:20%;}
+#header h2.txtright{margin-right:20%;}
+
+#banner header{height: 17em; font-weight: bold;}
+#banner header .byline {font-size: 1.6em;}
+
+
+/*CITY AREA*/
+.img-city{
+	background: url(../images/city2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 370px;
+	background-position: center bottom;
+	box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+#banner header {background-color: rgba(0, 0, 0, 0.7);}
+
+/*Intro Solutions*/
+#intro h2{color:#ff0001;}
+#intro p{color:white;}
+#intro p.medium{font-size: 1.4em;}
+
+#header-wrapper:after{
+
+	/*background: rgb(247, 247, 247) url(../images/elements/border-black.png);*/
+	height: 30px;
+	width: 100%;
+	content: "";
+
+	position: absolute;
+	bottom: -2px;
+	top: auto;
+	opacity: 1;
+}
+
+#main-wrapper {
+
+	background: rgb(247, 247, 247) url(../images/elements/border-black.png);
+	background-repeat: repeat-x;
+}
+
+#main-wrapper.blackbg {
+
+	background: black;
+	background-repeat: repeat-x;
+}
+
+
+
+.pennant {
+	background-color: white;
+	/*need for animation*/
+	
+	-webkit-transform:rotateX(270deg); 
+}
+
+.pennant.show{
+  	-webkit-animation: arrowmove 1s ease;
+   -moz-animation: arrowmove 1s ease;
+    -ms-animation: arrowmove 1s ease;
+     -o-animation: arrowmove 1s ease;
+        animation: arrowmove 1s ease;
+        -webkit-transform:rotateX(0deg); 
+}
+
+
+@-webkit-keyframes arrowmove {
+	0% {    -webkit-transform:rotateX(270deg);  }
+  100% {     -webkit-transform:rotateX(0deg);   }
+  
+}
+
+@-moz-keyframes  arrowmove {
+ 0% {     -moz-transform:rotateX(270deg);  }
+ 100% {     -moz-transform:rotateX(0deg);   }
+}
+
+
+
+.pennant:after {
+	border-top: solid 2em white;
+	border-left: solid 4.5em rgba(0, 0, 0, 0);
+	border-right: solid 4.5em rgba(0, 0, 0, 0);
+}
+
+
+.pennant span:before {
+	font-size: 4.5em;
+	color: #ff0001;
+	text-shadow: 1px 2px 0px rgb(0, 102, 255);
+	
+}
+
+
+.small.fa{font-size: 55%;}
+.over.fa{
+	margin-top: -41%;
+	font-weight: normal;
+}
+
+#intro .middle {
+	box-shadow: none;
+	border-left: solid 1px rgb(255, 255, 255);
+	border-right: solid 1px rgb(255, 255, 255);
+}
+#intro section {padding: 2em;}
+
+#intro header h2.big{
+		font-size: 3em;
+		margin: 0 0 0.65em 0;
+		line-height: 1.1em;
+
+		color: rgb(255, 255, 255);
+		font-weight: 700;
+}
+
+/*How to*/
+#howto header h2.big {
+	font-size: 3em;
+	margin: 0 0 0.65em 0;
+	line-height: 1.1em;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+}
+#howto p.medium{font-size: 1.4em;color: rgb(0, 0, 0);}
+
+#howto .actions .button {
+	width: 22%;
+	margin: auto 39%;
+	margin-top: 15px;
+}
+
+.bigimg{
+	width: 50%;
+	margin: 10% 25% 2% 25%;
+}
+
+.mobile1,.mobile3{margin-left: 10%;}
+.mobile2,.wifi{display: block; margin: auto;}
+
+/*mobiles first*/
+.mobile1,.mobile2,.mobile3{opacity: 0;}
+
+.mobile1.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity: 1;
+}
+
+.mobile2.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity: 1;
+}
+
+.mobile3.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity: 1;
+}
+
+/*middle*/
+.wifi,.sofa{opacity: 0;}
+
+.wifi.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity:1;
+}
+
+.sofa.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity:1;
+
+}
+
+/*last*/
+
+.laptop,.mac,.tv{opacity: 0;}
+
+.laptop.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity:1;
+}
+
+.mac.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity:1;
+}
+
+.tv.show{
+		-webkit-animation: showmobiles 1s ease;
+   -moz-animation: showmobiles 1s ease;
+    -ms-animation: showmobiles 1s ease;
+     -o-animation: showmobiles 1s ease;
+        animation: showmobiles 1s ease;
+         opacity:1;
+}
+
+
+
+@-webkit-keyframes showmobiles {
+	from {    opacity:0;  }
+  to {      opacity:1;    }
+  
+}
+
+@-moz-keyframes  showmobiles {
+ from {      opacity:0;  }
+  to {     opacity:1;    }
+}
+
+/*soon*/
+#soon header.major,#perfect header.major{font-size: 1.5em;}
+
+
+#soon article{
+	height: 250px;
+	width: 100%;
+}
+
+#soon article.stadium{
+	background: url(../images/others/baseball3.jpg);
+	background-size: contain;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#soon article.cinema{
+
+	background: url(../images/others/cinema3.jpg),url(../images/others/cinema3.jpg),url(../images/others/cinema3.jpg);
+	background-size: 135px 135px,135px 135px,135px 135px;
+
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-position: center bottom,top left,top right;
+}
+#soon article.school{
+
+	background: url(../images/others/school1.jpg);
+	background-size: contain ;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#soon .box {padding: 1.75em 1.75em 1.75em 1.75em;}
+#soon h3 {text-align: center;}
+#soon footer a{
+	margin: 0px auto;
+	width: 70%;
+	display: block;
+	text-align: center;
+}
+#soon footer a.bigbt{width: 75%;}
+
+/*perfect*/
+#perfect  h3{font-size: 1.75em;}
+
+#perfect footer a{
+	color:white;
+	text-align: center;
+	width: 30%;
+	margin: auto 35%;
+}
+#perfect footer a.button.fa:before  {
+	opacity: 1;
+	color: white;
+}
+
+#perfect article{
+	height: 290px;
+	width: 100%;	
+}
+
+#perfect article.family{
+	background: url(../images/faces/boy_1.png),url(../images/faces/girl_5.png),url(../images/faces/boy_9.png),url(../images/faces/girl_4.png);
+	background-size: 135px 135px,135px 135px,135px 135px,135px 135px;
+
+	background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+	background-position: top left,top right,bottom left,bottom right;
+}
+
+
+
+#perfect article.family:after{
+	content: "";
+	background: url(../images/faces/family-sprite.png);
+	display: block;
+	width: 55%;
+	height: 150px;
+	
+	
+	position: relative;
+	top: 30%;
+	left: 22%;
+	
+
+	-webkit-animation: family_speak 10s steps(4) infinite;
+   -moz-animation: family_speak 10s steps(4) infinite;
+    -ms-animation: family_speak 10s steps(4) infinite;
+     -o-animation: family_speak 10s steps(4) infinite;
+        animation: family_speak 10s steps(4) infinite;
+
+}
+
+	@-webkit-keyframes family_speak {
+	   from { background-position:    0px; }
+	     to { background-position: -1206px; }
+	}
+
+	@-moz-keyframes family_speak {
+	   from { background-position:    0px; }
+	     to { background-position: -1206px; }
+	}
+
+
+
+
+
+#perfect article.friends{
+	background: url(../images/faces/boy_3.png),url(../images/faces/boy_5.png),url(../images/faces/boy_2.png),url(../images/faces/boy_7.png),url(../images/faces/boy_8.png);
+	background-size: 135px 135px,135px 135px,135px 135px,135px 135px,135px 135px;
+
+	background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+	background-position: top left,top center,top right,bottom left,bottom right;
+}
+
+
+#perfect article.friends:after{
+	content: "";
+	background: url(../images/faces/speak-friends.png);
+	display: block;
+	width: 55%;
+	height: 150px;
+	
+	
+	position: relative;
+	top: 46%;
+	left: 22%;
+	
+
+	-webkit-animation: friends_speak 20s steps(5) infinite;
+   -moz-animation: friends_speak 20s steps(5) infinite;
+    -ms-animation: friends_speak 20s steps(5) infinite;
+     -o-animation: friends_speak 20s steps(5) infinite;
+        animation: friends_speak 20s steps(5) infinite;
+
+}
+
+	@-webkit-keyframes friends_speak {
+	   from { background-position:    0px; }
+	     to { background-position: -1506px; }
+	}
+
+	@-moz-keyframes friends_speak {
+	   from { background-position:    0px; }
+	     to { background-position: -1506px; }
+	}
+
+#perfect .box {padding:  1.75em;}
+
+
+/*GAMES*/
+.game{width: 100%; height: 275px;}
+.pbottom{margin-top: 30px;}
+
+
+/*About us*/
+#footer p{color:white;}
+#footer header p{text-align: center;}
+.fill_box{
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
+	float: right;
+	width: 70%;
+	margin-right: 20%;
+	font-size: 1.5em;
+	height: 2em;
+}
+textarea.fill_box{height: 5em;}
+form li{
+	float: left;
+	width: 100%;
+}
+
+ul.dates .date {
+	line-height: 1.7em;
+	background: rgb(255, 0, 1);
+}
+ul.dates .date:after {
+	border-left: solid 1.25em rgb(255, 0, 1);
+}
+/*#footer-wrapper strong{color: #0066FF;}*/
+
+#footer .button.alt{
+	width: 30%;
+	text-align: center;
+	margin: 0% 35%;
+	background: rgb(255, 255, 255);
+	color: black !important;
+}
+#footer .button.alt:hover { background: rgb(255, 0, 1);  color: white !important;}
+.fa-envelope:before {
+	content: "\f0e0";
+	opacity: 1!important;
+}
+p.explain{font-size: 1.2em; margin-top: 20px;}
+
+#copyright {background: none;}
+#copyright .links {background: none;}
+
+/*GENERAL FOR TXT*/
+.txtleft{ text-align: left;}
+.txtright{ text-align: right;}
+.txtcenter{ text-align: center;}
+
+.no_margin_top{margin-top:0px;padding-top:0px !important;}
+.fcenter{ margin: auto;}
+
+button:hover,.button:hover,.button.alt:hover{
+	background: rgb(255, 0, 1);
+	/*box-shadow: 1px 2px 3px rgb(0, 102, 255);*/
+	text-shadow: 1px 2px 3px rgb(0, 102, 255);
+	box-shadow: inset 0 0px 1px 3px #0066FF;
+
+	/*border: 3px solid rgb(0, 122, 255);*/
+}
+
+/* ---- BIG ANIMATIONS ----- */
+
+.wifi.show{
+	opacity: 1;
+}
+
+.wifi{
+	display: block;
+	height: 100px;
+	width: 119px;
+	
+	background-repeat: no-repeat;
+	background: url(../images/elements/wifi-sprite.png);
+	background-position: 0px -14px;
+}
+.wifi.move{
+	display: block;
+	height: 100px;
+	width: 119px;
+	opacity: 1;
+	background-repeat: no-repeat;
+	/*background: url(../images/elements/wifi-sprite.png);*/
+	-webkit-animation: wifi_emit 2s steps(4) infinite;
+   -moz-animation: wifi_emit 2s steps(4) infinite;
+    -ms-animation: wifi_emit 2s steps(4) infinite;
+     -o-animation: wifi_emit 2s steps(4) infinite;
+        animation: wifi_emit 2s steps(4) infinite;
+
+}
+
+	@-webkit-keyframes wifi_emit {
+	   from { background-position:    0px; }
+	     to { background-position: -480px; }
+	}
+
+	@-moz-keyframes wifi_emit {
+	   from { background-position:    0px; }
+	     to { background-position: -480px; }
+	}
+	
+#howto .tv{
+	display: block;
+	margin: 16% 7%;
+	float:left;
+	height: 128px;
+	width: 128px;
+
+	background: url(../images/elements/tv-sprite-completo.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#howto .tv.show{	opacity: 1;}
+
+.tv.move{
+	display: block;
+	height: 128px;
+	width: 128px;
+	opacity: 1;
+	
+	
+	-webkit-animation: tv_move 1s steps(3) infinite;
+   -moz-animation: tv_move 1s steps(3) infinite;
+    -ms-animation: tv_move 1s steps(3) infinite;
+     -o-animation: tv_move 1s steps(3) infinite;
+        animation: tv_move 1s steps(3) infinite;
+
+}
+
+	@-webkit-keyframes tv_move {
+	   /*from { background-position:    -127px  2px; }
+	     to { background-position: -388px 2px; }*/
+
+	     from { background-position:    -127px  2px; }
+	     to { background-position: -518px 2px; }
+	}
+
+	@-moz-keyframes tv_move {
+	   from { background-position:    -128px  0px; }
+	     to { background-position: -480px 0px; }
+	}
+
+/*GAMEs*/
+
+#game1:after,#game2:after,#game3:after{
+	content: "Place the mouse to start";
+	display: block;
+	background: rgb(255, 0, 0);
+	width: auto;
+	height: 71px;
+	font-size: 2em;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	top: 30%;
+	position: relative;
+	width: 60%;
+	border-radius: 30px;
+	padding: 3%;
+	border: 3px solid rgb(255, 255, 255);
+	left: 20%;
+	}
+
+	#game1:hover:after,#game2:hover:after,#game3:hover:after{display: none;}
+#game1{
+	display: block;
+		width: 373px;
+		height: 275px;
+		
+		background: url(../images/games/game1.jpg);
+		background-size:100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+}
+
+	#game1:hover{
+
+		display: block;
+		width: 373px;
+		height: 275px;
+		
+		background: url(../images/games/mario-sprite.png),url(../images/games/game1.jpg);
+		background-size:auto,100%;
+		background-position: center center,center center;
+		background-repeat: no-repeat,no-repeat;
+				
+		-webkit-animation: game_mario_play 1s steps(3)  infinite;
+	   -moz-animation: game_mario_play 1s steps(3)  infinite;
+	    -ms-animation: game_mario_play 1s steps(3)  infinite;
+	     -o-animation: game_mario_play 1s steps(3)  infinite;
+	        animation: game_mario_play 1s steps(3)  infinite;
+
+	}
+	
+	@-webkit-keyframes game_mario_play {
+	   from { background-position:    0px; }
+	     /*to { background-position: -1680px; }*/
+	     to { background-position: -1000px; }
+	}
+
+	@-moz-keyframes game_mario_play {
+	   from { background-position:    0px; }
+	     to { background-position: -1000px}
+	}
+
+
+
+	#game2{
+
+		display: block;
+		width: 373px;
+		height: 275px;
+		
+		background: url(../images/games/game2.jpg);
+		background-size:100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	#game2:hover{
+
+		display: block;
+		width: 373px;
+		height: 275px;
+		
+		background: url(../images/games/cave-sprite.png),url(../images/games/game2.jpg);
+		background-size:auto,100%;
+		background-position: center center,center center;
+		background-repeat: no-repeat,no-repeat;
+				
+		-webkit-animation: game_cave_play 1s steps(3) alternate infinite;
+	   -moz-animation: game_cave_play 1s steps(3) alternate infinite;
+	    -ms-animation: game_cave_play 1s steps(3) alternate infinite;
+	     -o-animation: game_cave_play 1s steps(3) alternate infinite;
+	        animation: game_cave_play 1s steps(3) alternate infinite;
+
+	}
+
+	@-webkit-keyframes game_cave_play {
+	   from { background-position:    0px; }
+	     /*to { background-position: -1680px; }*/
+	     to { background-position: -1000px; }
+	}
+
+	@-moz-keyframes game_cave_play {
+	   from { background-position:    0px; }
+	     to { background-position: -1000px}
+	}
+
+#game3{
+
+		display: block;
+		width: 373px;
+		height: 275px;
+		
+		background: url(../images/games/game3.png);
+		background-size:cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	#game3:hover{
+
+		display: block;
+		width: 373px;
+		height: 275px;
+		
+		background: url(../images/games/game3-sprite.png),url(../images/games/game3.png);
+		background-size:auto,cover;
+		background-position: center center,center center;
+		background-repeat: no-repeat,no-repeat;
+				
+		-webkit-animation: game_cave_play 1s steps(3) alternate infinite;
+	   -moz-animation: game_cave_play 1s steps(3) alternate infinite;
+	    -ms-animation: game_cave_play 1s steps(3) alternate infinite;
+	     -o-animation: game_cave_play 1s steps(3) alternate infinite;
+	        animation: game_cave_play 1s steps(3) alternate infinite;
+
+	}
+
+	@-webkit-keyframes game_cave_play {
+	   from { background-position:    0px; }
+	     /*to { background-position: -1680px; }*/
+	     to { background-position: -1000px; }
+	}
+
+	@-moz-keyframes game_cave_play {
+	   from { background-position:    0px; }
+	     to { background-position: -1000px}
+	}
+
+
+
+
